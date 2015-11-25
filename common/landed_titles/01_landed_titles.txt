@@ -868,6 +868,7 @@ e_anderfels = {
 		}
 	}
 }
+
 e_antiva = {
 	color={ 221 39 226 }
 	color2={ 255 255 20 }
@@ -1581,6 +1582,7 @@ e_antiva = {
 		}
 	}
 }
+
 e_avvars = {
 	color={ 32 190 161 }
 	color2={ 255 255 20 }
@@ -1862,24 +1864,34 @@ e_avvars = {
 		}
 	}
 }
-e_deep_roads = {
+
+e_dwarf_empire = {
 	color={ 177 147 55 }
 	color2={ 255 255 20 }
 	
 	capital = 799 # c_orzammar
 	culture = orzammar
+	title = "King"
+	title_female = "Queen"
+	
+	short_name = yes
+	allow ={
+		culture = orzammar
+		always = no
+	}
 	
 	k_orzammar = {
 		color={ 187 137 60 }
 		color2={ 255 255 255 }
 		
 		capital = 799 # c_orzammar
-		culture = orzammar
+		title = "King"
+		title_female = "Queen"
+		title_prefix = "Kingdom of"
 		
 		d_orzammar = {
 			color={ 207 117 70 }
 			color2={ 255 255 255 }
-			
 			allow = {
 				OR = {
 					lower_tier_than = KING
@@ -2021,7 +2033,7 @@ e_deep_roads = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 821 province_id = 822 province_id = 823 province_id = 824 province_id = 825 province_id = 826 province_id = 827 province_id = 828 province_id = 829 province_id = 830 province_id = 831 province_id = 832 province_id = 833 province_id = 834 province_id = 835 } }
+					any_demesne_province = { OR = {province_id = 821 province_id = 822 province_id = 823 province_id = 824 province_id = 825 province_id = 826 province_id = 827 province_id = 828 province_id = 829 province_id = 830 province_id = 831 province_id = 832 province_id = 833 province_id = 834 province_id = 835 } }
 				}
 			}
 			capital = 821 # c_bowammar
@@ -2343,13 +2355,16 @@ e_deep_roads = {
 			}
 		}
 	}
+	
 	k_gumdar = {
 		color={ 104 49 119 }
 		color2={ 255 255 255 }
 		
 		capital = 877 # c_gumdar
 		culture = darkspawn
-		
+		title = "King"
+		title_female = "Queen"
+		title_prefix = "Kingdom of"
 		d_gumdar = {
 			color={ 84 69 109 }
 			color2={ 255 255 255 }
@@ -2862,13 +2877,16 @@ e_deep_roads = {
 			}
 		}
 	}
+	
 	k_hormak = {
 		color={ 150 47 90 }
 		color2={ 255 255 255 }
 		
 		capital = 917 # c_hormak
 		culture = darkspawn
-		
+		title = "King"
+		title_female = "Queen"
+		title_prefix = "Kingdom of"
 		d_hormak = {
 			color={ 130 67 80 }
 			color2={ 255 255 255 }
@@ -3319,12 +3337,17 @@ e_deep_roads = {
 			}
 		}
 	}
+	
 	k_kal_sharok = {
 		color={ 115 77 90 }
 		color2={ 255 255 255 }
 		
 		capital = 836 # c_kal_sharok
 		culture = kal_sharok
+		title = "King"
+		title_female = "Queen"
+		title_prefix = "Kingdom of"
+		
 		
 		d_kal_sharok = {
 			color={ 95 97 80 }
@@ -3918,6 +3941,7 @@ e_deep_roads = {
 		}
 	}
 }
+
 e_ferelden = {
 	color={ 215 36 236 }
 	color2={ 255 255 20 }
@@ -5531,6 +5555,7 @@ e_ferelden = {
 		}
 	}
 }
+
 e_free_marches = {
 	color={ 39 216 20 }
 	color2={ 255 255 20 }
@@ -6624,6 +6649,7 @@ e_free_marches = {
 		}
 	}
 }
+
 e_nevarra = {
 	color={ 204 218 120 }
 	color2={ 255 255 20 }
@@ -7565,6 +7591,7 @@ e_nevarra = {
 		}
 	}
 }
+
 e_orlais = {
 	color={ 40 220 19 }
 	color2={ 255 255 20 }
@@ -9750,6 +9777,7 @@ e_orlais = {
 		}
 	}
 }
+
 e_rivain = {
 	color={ 96 218 50 }
 	color2={ 255 255 20 }
@@ -10390,6 +10418,7 @@ e_rivain = {
 		}
 	}
 }
+
 e_tevinter_imperium = {
 	color={ 200 216 208 }
 	color2={ 255 255 20 }
@@ -11939,6 +11968,7 @@ e_tevinter_imperium = {
 		}
 	}
 }
+
 e_the_qun = {
 	color={ 185 2 60 }
 	color2={ 255 255 20 }
@@ -12743,6 +12773,7 @@ e_the_qun = {
 		}
 	}
 }
+
 k_arlathan = {
 	color={ 30 55 15 }
 	color2={ 255 255 255 }
@@ -12895,6 +12926,7 @@ k_arlathan = {
 		}
 	}
 }
+
 k_brecilia_forest = {
 	color={ 108 246 78 }
 	color2={ 255 255 255 }
@@ -13075,6 +13107,7 @@ k_brecilia_forest = {
 		}
 	}
 }
+
 k_korcari_wilds = {
 	color={ 208 100 86 }
 	color2={ 255 255 255 }
@@ -13247,6 +13280,7 @@ k_korcari_wilds = {
 		}
 	}
 }
+
 k_the_arbor = {
 	color={ 123 175 54 }
 	color2={ 255 255 255 }
@@ -13344,6 +13378,7 @@ k_the_arbor = {
 		}
 	}
 }
+
 k_the_felicissima_armada = {
 	color={ 78 18 63 }
 	color2={ 255 255 255 }

@@ -16,6 +16,14 @@ castle = {
 	# Wall quality, gives fortlevel
 	ca_wall_q_1 = {
 		desc = ca_wall_q_1_desc
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		gold_cost = 50
 		build_time = 182
@@ -73,6 +81,14 @@ castle = {
 	#Walls, gives fortlevel, levysize and income
 	ca_wall_1 = {
 		desc = ca_wall_1_desc
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		gold_cost = 50
 		build_time = 365
@@ -150,6 +166,14 @@ castle = {
 	#Keeps, gives levy and garrison size
 	ca_keep_1 = {
 		desc = ca_keep_1_desc
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		gold_cost = 150
 		build_time = 547 #1.5y
@@ -225,6 +249,14 @@ castle = {
 	# Militia barracks, gives light infantry and archers.
 	ca_militia_barracks_1 = {
 		desc = ca_militia_barracks_1_desc
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 100
 		build_time = 365
@@ -275,6 +307,14 @@ castle = {
 	#Training grounds, gives morale and reinforce rate
 	ca_training_grounds_1 = {
 		desc = ca_training_grounds_1_desc
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
@@ -316,6 +356,14 @@ castle = {
 	# Barracks, gives heavy infantry and pikemen
 	ca_barracks_1 = {
 		desc = ca_barracks_1_desc
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 100
 		build_time = 365
@@ -391,6 +439,14 @@ castle = {
 	#Stable, gives light cavalry and some heavy cavalry
 	ca_stable_1 = {
 		desc = ca_stable_1_desc
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 100
 		build_time = 365
@@ -463,6 +519,14 @@ castle = {
 	#Castle town, gives income
 	ca_town_1 = {
 		desc = ca_town_1_desc
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 100
 		build_time = 365
@@ -532,6 +596,14 @@ castle = {
 	ca_shipyard_1 = {
 		desc = shipyard_desc
 		port = yes
+		potential = {
+				not = {
+					or = {
+						FROM = { culture = darkspawn }
+						FROM = { culture = orzammar }
+					}
+				}
+		}
 		trigger = { TECH_NAVAL = 1 }
 		gold_cost = 100
 		build_time = 365
@@ -540,7 +612,6 @@ castle = {
 		
 		extra_tech_building_start = 0.3
 	}
-	
 	ca_shipyard_2 = {
 		desc = shipyard_desc
 		port = yes
@@ -553,7 +624,6 @@ castle = {
 		
 		extra_tech_building_start = 0.3
 	}
-	
 	ca_shipyard_3 = {
 		desc = shipyard_desc
 		port = yes
@@ -566,7 +636,6 @@ castle = {
 		
 		extra_tech_building_start = 0.3
 	}
-	
 	ca_shipyard_4 = {
 		desc = shipyard_desc
 		port = yes
@@ -578,5 +647,382 @@ castle = {
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 0.3
+	}
+
+#Darkspawn buildings
+	#gives units to the darkspawn
+	ca_darkspawn_horde_1 = {
+		decs = ca_darkspawn_horde_decs
+		
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 50
+		light_infantry = 250
+		archers = 75
+	}
+	ca_darkspawn_horde_2 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_1
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 100
+		light_infantry = 500
+		archers = 150
+	}
+	ca_darkspawn_horde_3 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_2
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 150
+		light_infantry = 750
+		archers = 225
+	}
+	ca_darkspawn_horde_4 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_3
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 200
+		light_infantry = 1000
+		archers = 300
+	}
+	ca_darkspawn_horde_5 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_4
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 250
+		light_infantry = 1250
+		archers = 375
+	}
+	ca_darkspawn_horde_6 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_5
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 300
+		light_infantry = 1500
+		archers = 450
+	}
+	ca_darkspawn_horde_7 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_6
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 350
+		light_infantry = 1750
+		archers = 525
+	}
+	ca_darkspawn_horde_8 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_7
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 400
+		light_infantry = 2000
+		archers = 600
+	}
+	ca_darkspawn_horde_9 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_8
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 450
+		light_infantry = 2250
+		archers = 675
+	}
+	ca_darkspawn_horde_10 = {
+		decs = ca_darkspawn_horde_decs
+		
+		upgrades_from = ca_darkspawn_horde_9
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+		
+		heavy_infantry = 500
+		light_infantry = 2500
+		archers = 750
+	}
+
+	#spawn units for the darkspawn by event
+	ca_broodmother_1 = {
+		decs = ca_broodmother_decs
+		
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+	}
+	ca_broodmother_2 = {
+		decs = ca_broodmother_decs
+		
+		upgrades_from = ca_broodmother_1
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+	}
+	ca_broodmother_3 = {
+		decs = ca_broodmother_decs
+		
+		upgrades_from = ca_broodmother_2
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+	}
+	ca_broodmother_4 = {
+		decs = ca_broodmother_decs
+		
+		upgrades_from = ca_broodmother_3
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+	}
+	ca_broodmother_5 = {
+		decs = ca_broodmother_decs
+		
+		upgrades_from = ca_broodmother_4
+		potential = {
+				FROM = { culture = darkspawn }
+		}	
+		
+		trigger = {
+			always = no
+		}
+		extra_tech_building_start = 1 # Never get at start of game
+	}
+	
+	
+#Dwarf buildings
+	ca_warrior_caste_1 = {
+		desc = ca_warrior_caste_desc
+		potential = {
+			FROM = { culture = orzammar }
+		}
+		prerequisites = { ca_thaig_wall_1 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 100
+		build_time = 365
+		heavy_infantry = 30
+		pikemen = 15
+		ai_creation_factor = 105
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_warrior_caste_2 = {
+		desc = ca_warrior_caste_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_thaig_wall_2 }
+		upgrades_from = ca_warrior_caste_1
+		gold_cost = 120
+		build_time = 547
+		heavy_infantry = 40
+		pikemen = 15
+		ai_creation_factor = 104
+		
+		extra_tech_building_start = 1.8
+	}
+	ca_warrior_caste_3 = {
+		desc = ca_warrior_caste_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_thaig_wall_3 }
+		upgrades_from = ca_warrior_caste_2
+		gold_cost = 200
+		build_time = 730
+		heavy_infantry = 45
+		pikemen = 20
+		ai_creation_factor = 103
+
+		extra_tech_building_start = 3.0
+	}
+	ca_warrior_caste_4 = {
+		desc = ca_warrior_caste_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_thaig_wall_4 }
+		upgrades_from = ca_warrior_caste_3
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 50
+		pikemen = 25
+		ai_creation_factor = 102
+
+		extra_tech_building_start = 3.0
+	}
+	ca_warrior_caste_5 = {
+		desc = ca_warrior_caste_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_thaig_wall_5 }
+		upgrades_from = ca_warrior_caste_4
+		gold_cost = 400
+		build_time = 2190
+		heavy_infantry = 60
+		pikemen = 25
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 2.0
+	}
+
+	ca_thaig_wall_1 = {
+		desc = ca_thaig_wall_desc
+		potential = {
+			FROM = { culture = orzammar }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 50
+		build_time = 182
+		fort_level = 0.5
+		levy_size = 0.025
+		tax_income = 0.2
+		ai_creation_factor = 80
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_thaig_wall_2 = {
+		desc = ca_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_thaig_wall_1
+		gold_cost = 50
+		build_time = 182
+		fort_level = 0.5
+		levy_size = 0.025
+		tax_income = 0.2
+		ai_creation_factor = 79
+
+		extra_tech_building_start = 0.6
+	}
+	ca_thaig_wall_3 = {
+		desc = ca_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_thaig_wall_2
+		gold_cost = 50
+		build_time = 182
+		fort_level = 1.0
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 78
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_thaig_wall_4 = {
+		desc = ca_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_thaig_wall_3
+		gold_cost = 100
+		build_time = 365
+		fort_level = 1.0
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 77
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_thaig_wall_5 = {
+		desc = ca_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_thaig_wall_4
+		gold_cost = 100
+		build_time = 365
+		fort_level = 1.5
+		levy_size = 0.1
+		tax_income = 0.5
+		
+		ai_creation_factor = 76
+
+		extra_tech_building_start = 0.2
 	}
 }

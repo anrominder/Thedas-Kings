@@ -420,7 +420,10 @@ the_stone = {
 		}
 		crusade_name = CAMPAIGN
 		scripture_name = THE_MEMORIES
+		priest_title = SHAPER
 		priests_can_marry = yes
+		matrilineal_marriages = no
+		female_temple_holders = yes
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -438,7 +441,10 @@ the_stone = {
 		}
 		crusade_name = CAMPAIGN
 		scripture_name = THE_MEMORIES
+		priest_title = SHAPER
 		priests_can_marry = yes
+		matrilineal_marriages = no
+		female_temple_holders = yes
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3

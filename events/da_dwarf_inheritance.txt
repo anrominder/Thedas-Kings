@@ -10,7 +10,7 @@ character_event = { #assing race trait from on_startup and on_yearly_pulse - for
                 capital_scope = {
                         or = {
                                 empire = { title = e_ferelden }
-                                empire = { title = e_deep_roads }
+                                empire = { title = e_dwarf_empire }
                                 empire = { title = e_the_dales }
                                 empire = { title = e_avvars }
                                 empire = { title = e_orlais }
