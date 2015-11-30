@@ -1,0 +1,275 @@
+##House Augustin
+1010002={
+	name = "Luzia"
+	dynasty = 1010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "grey_eminence"
+	add_trait = "charitable"
+	add_trait = "humble"
+	add_trait = "kind"
+	add_trait = "gregarious"
+	
+	8888.1.1={
+		birth = yes
+	}
+	
+	8904.1.1={
+		add_spouse=1010001
+	}
+	
+	8961.1.1={
+		death = yes
+	}
+}
+
+1010003={
+	name = "Baldewin"
+	dynasty = 1010
+	father = 1010001
+	mother = 1010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "skilled_tactician"
+	add_trait = "charitable"
+	add_trait = "honest"
+	add_trait = "proud"
+	add_trait = "brave"
+	
+	8907.1.1={
+		birth = yes
+	}
+	
+	8982.1.1={
+		death = yes
+	}
+}
+
+#Custom
+##House Abbing
+2010001={
+	name = "Alfons"
+	dynasty = 2010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "fortune_builder"
+	add_trait = "drunkard"
+	add_trait = "slow"
+	add_trait = "strong"
+	add_trait = "cynical"
+	
+	8882.1.1={
+		birth = yes
+	}
+	
+	8960.1.1={
+		death = yes
+	}
+}
+
+##House Adelmann
+3010001={
+	name = "Karlheinz"
+	dynasty = 3010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "tough_soldier"
+	add_trait = "wounded"
+	add_trait = "bastard"
+	add_trait = "duelist"
+	add_trait = "arbitrary"
+	
+	8905.1.1={
+		birth = yes
+	}
+	
+	8922.1.1={
+		add_spouse = 3010002
+	}
+	
+	8973.1.1={
+		death = yes
+	}
+}
+
+3010002={
+	name = "Anna"
+	dynasty = 3010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "naive_appeaser"
+	add_trait = "diligent"
+	add_trait = "shy"
+	add_trait = "content"
+	add_trait = "trusting"
+	
+	8906.1.1={
+		birth = yes
+	}
+	
+	3984.1.1={
+		death = yes
+	}
+}
+
+3010003={
+	name = "Felicitas"
+	dynasty = 3010
+	female = yes
+	father = 3010001
+	mother = 3010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "charismatic_negotiator"
+	add_trait = "ambitious"
+	add_trait = "trusting"
+	add_trait = "arbitrary"
+	add_trait = "gregarious"
+	
+	8928.1.1={
+		birth = yes
+	}
+	
+	8999.1.1={
+		death = yes
+	}
+}
+
+##House Aebersold
+4010001={
+	name = "Hanno"
+	dynasty = 4010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "misguided_warrior"
+	add_trait = "impaler"
+	add_trait = "wroth"
+	add_trait = "trusting"
+	add_trait = "trickster"
+	
+	8876.1.1={
+		birth = yes
+	}
+	
+	8899.1.1={
+		add_spouse = 4010002
+	}
+	
+	8949.1.1={
+		death = yes
+	}
+}
+
+4010002={
+	name = "Adele"
+	dynasty = 4010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "detached_priest"
+	add_trait = "scholar"
+	add_trait = "temperate"
+	add_trait = "slothful"
+	add_trait = "humble"
+	
+	8879.1.1={
+		birth = yes
+	}
+	
+	8954.1.1={
+		death = yes
+	}
+}
+
+4010003={
+	name = "Mara"
+	dynasty = 4010
+	female = yes
+	father = 4010001
+	mother = 4010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "underhanded_rogue"
+	add_trait = "diligent"
+	add_trait = "poet"
+	add_trait = "patient"
+	add_trait = "trusting"
+	
+	8901.1.1={
+		birth = yes
+	}
+	
+	8968.1.1={
+		death = yes
+	}
+}
+
+4010004={
+	name = "Elsha"
+	dynasty = 4010
+	female = yes
+	father = 4010001
+	mother = 4010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "brilliant_strategist"
+	add_trait = "gluttonous"
+	add_trait = "scholar"
+	add_trait = "proud"
+	add_trait = "wroth"
+	
+	8904.1.1={
+		birth = yes
+	}
+	
+	8971.1.1={
+		death = yes
+	}
+}
+
+4010005={
+	name = "Evelyn"
+	dynasty = 4010
+	female = yes
+	father = 4010001
+	mother = 4010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "scholarly_theologian"
+	add_trait = "trusting"
+	add_trait = "temperate"
+	add_trait = "poet"
+	add_trait = "patient"
+	
+	8907.1.1={
+		birth = yes
+	}
+	
+	8983.1.1={
+		death = yes
+	}
+}
