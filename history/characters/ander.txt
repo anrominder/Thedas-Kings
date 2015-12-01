@@ -1,4 +1,4 @@
-##House Augustin
+﻿##House Augustin
 1010002={
 	name = "Luzia"
 	dynasty = 1010
@@ -272,4 +272,238 @@
 	8983.1.1={
 		death = yes
 	}
+}
+
+##House Agner
+5010001={
+	name = "Brünhilde"
+	dynasty = 5010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "flamboyant_schemer"
+	add_trait = "kinslayer"
+	add_trait = "homosexual"
+	add_trait = "stutter"
+	add_trait = "envious"
+	
+	8897.1.1={
+		birth = yes
+	}
+	
+	8965.1.1={
+		death = yes
+	}
+}
+
+##House Albach
+6010001={
+	name = "Eckardt"
+	dynasty = 6010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "indulgent_wastrel"
+	add_trait = "quick"
+	add_trait = "greedy"
+	add_trait = "diligent"
+	add_trait = "ambitious"
+	
+	8886.1.1={
+		birth = yes
+	}
+	
+	8964.1.1={
+		death = yes
+	}
+}
+	
+##House Blommer
+7010001={
+	name = "Sophie"
+	dynasty = 7010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "underhanded_rogue"
+	add_trait = "arbitrary"
+	add_trait = "cynical"
+	add_trait = "paranoid"
+	add_trait = "shy"
+	
+	8875.1.1={
+		birth = yes
+	}
+	
+	8948.1.1={
+		death = yes
+	}
+}
+
+7010002={
+	name = "Lukas"
+	dynasty = 7010
+	mother = 7010001
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "tough_soldier"
+	add_trait = "bastard"
+	add_trait = "homosexual"
+	add_trait = "slow"
+	add_trait = "lustful"
+	
+	8902.1.1={
+		birth = yes
+	}
+	
+	8969.1.1={
+		death = yes
+	}
+}
+
+7010003={
+	name = "Vera"
+	dynasty = 7010
+	female = yes
+	mother = 7010001
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "amateurish_plotter"
+	add_trait = "bastard"
+	add_trait = "slothful"
+	add_trait = "lunatic"
+	add_trait = "weak"
+	
+	8908.1.1={
+		birth = yes
+	}
+	
+	8981.1.1={
+		death = yes
+	}
+}
+
+##House Bock
+8010001={
+	name = "Detlev"
+	dynasty = 8010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "amateurish_plotter"
+	add_trait = "deceitful"
+	add_trait = "patient"
+	add_trait = "shy"
+	add_trait = "arbitrary"
+	
+	8900.1.1={
+		birth = yes
+	}
+	
+	8976.1.1={
+		death = yes
+	}
+}
+
+8010002={
+	name = "Yasmin"
+	dynasty = 8010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "underhanded_rogue"
+	add_trait = "homosexual"
+	add_trait = "fair"
+	add_trait = "kind"
+	add_trait = "honest"
+	
+	8903.1.1={
+		birth = yes
+	}
+	
+	8979.1.1={
+		death = yes
+	}
+}
+
+##House Boeker
+9010001={
+	name = "Marc"
+	dynasty = 9010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "skilled_tactician"
+	add_trait = "brave"
+	add_trait = "strong"
+	add_trait = "cynical"
+	add_trait = "proud"
+	
+	8887.1.1={
+		birth = yes
+	}
+	
+	8963.1.1={
+		death = yes
+	}
+}
+
+9010002={
+	name = "Lieselotte"
+	dynasty = 9010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "naive_appeaser"
+	add_trait = "kind"
+	add_trait = "humble"
+	add_trait = "weak"
+	add_trait = "gregarious"
+	
+	8889.1.1={
+		birth = yes
+	}
+	
+	8961.1.1={
+		death = yes
+	}
+}
+
+9010003={
+	name = "Maya"
+	dynasty = 9010
+	female = yes
+	father = 9010001
+	mother = 9010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "charismatic_negotiator"
+	add_trait = "proud"
+	add_trait = "kind"
+	add_trait = "weak"
+	add_trait = "brave"
+	
+	8909.1.1={
+		birth = yes
+	}
+	
+	8985.1.1={
+		death = yes}
 }
