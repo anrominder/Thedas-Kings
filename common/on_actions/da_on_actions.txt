@@ -4,6 +4,8 @@ on_startup = {
 		da_racial_setup.1 #maintenance: race/caste for randomle generated characters
 		qunari_marriage.1 #qunari breeding program event
 		history_fix.1 #de jure and the facto changes on campaign start
+		qunari_name.1
+		qunari_name.2
 	}
 }
 
@@ -12,6 +14,8 @@ on_yearly_pulse = {
 	events = {
 		da_racial_setup.1 #maintenance: race/caste for randomle generated characters
 		qunari_marriage.1 #qunari breeding program event
+		qunari_name.1
+		qunari_name.2
 	}
 	
 }
@@ -31,3 +35,9 @@ on_death = {
 	}
 }
 
+on_adulthood = {
+events = {
+qunari_marriage.1
+qunari_marriage.3
+	}
+}
