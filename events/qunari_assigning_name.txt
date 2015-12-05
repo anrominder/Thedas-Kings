@@ -1,0 +1,182 @@
+namespace = qunari_name
+character_event = { #Male assigning name at 12
+id = qunari_name.1
+desc = QUNNAME1 #You got a name, Yuppie. The Qun choosed your role in society.
+min_age = 12
+only_men = yes
+religion = qun_religion
+is_triggered_only = yes 
+trigger = {
+location = {
+empire = { title = e_the_qun }
+}
+NOT = {
+has_character_flag = "assigned_qun_name"
+	}
+}
+immediate = {
+
+random_list = {
+50 = {
+modifier = {
+factor = 0.2
+martial = 8
+	}
+modifier = {
+factor = 0.2
+intrigue = 4 
+	}
+set_name = "Athlok"
+}
+50 = {
+modifier = {
+factor = 2
+martial = 8
+	}
+modifier = {
+factor = 1
+intrigue = 4
+	}
+set_name = "Karashok"
+}
+20 = {
+modifier = {
+factor = 2
+martial = 10
+	}
+modifier = {
+factor = 1
+intrigue = 8
+	}
+set_name = "Karasaad"
+}
+10 = {
+modifier = {
+factor = 2
+martial = 15
+	}
+modifier = {
+factor = 1
+intrigue = 10
+	}
+set_name = "Karasten"
+	}
+2 = {
+modifier = {
+factor = 2
+martial = 20
+	}
+modifier = {
+factor = 1
+intrigue = 15
+	}
+set_name = "Sten"
+	}
+40 = {
+modifier = {
+factor = 3
+intrigue = 10
+		}
+set_name = "Ashaad"
+	}
+20 = {
+modifier = {
+factor = 2
+diplomacy = 8
+	}
+modifier = {
+factor = 2
+martial = 9
+	}
+set_name = "Kathaban"
+	}
+1 = {
+modifier = {
+factor = 3
+martial = 15
+	}
+set_name = "Kithshok"	
+	}
+}
+set_character_flag = "assigned_qun_name"
+top_liege = {
+set_character_flag = "assigned_Arishok_name"
+set_name = "Arishok"
+	}
+}
+option = {
+name = QNNAMEOPT
+	}
+}
+
+namespace = qunari_name
+character_event = { #Female assigning name at 12
+id = qunari_name.2
+desc = QUNNAME1 #You got a name, Yuppie. The Qun choosed your role in society.
+min_age = 12
+only_women = yes
+religion = qun_religion
+is_triggered_only = yes 
+trigger = {
+location = {
+empire = { title = e_the_qun }
+}
+NOT = {
+has_character_flag = "assigned_qun_name"
+	}
+}
+immediate = {
+
+random_list = {
+50 = {
+modifier = {
+factor = 0.2
+Stewardship = 8
+	}
+modifier = {
+factor = 0.2
+learning = 4 
+	}
+set_name = "Athlok"
+}
+40 = {
+modifier = {
+factor = 2
+Stewardship = 8
+	}
+modifier = {
+factor = 1
+learning = 4
+	}
+set_name = "Taardathras"
+}
+20 = {
+modifier = {
+factor = 2
+intrigue = 10
+	}
+modifier = {
+factor = 1
+diplomacy = 8
+	}
+set_name = "Tallis"
+}
+10 = {
+modifier = {
+factor = 2
+intrigue = 15
+	}
+modifier = {
+factor = 1
+diplomacy = 10
+	}
+modifier = {
+factor = 1
+stewardship = 10
+		}
+set_name = "Viddasala"
+			}
+		}
+set_character_flag = "assigned_qun_name"
+	}
+}
