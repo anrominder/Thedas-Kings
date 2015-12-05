@@ -102,12 +102,7 @@ the_qun = {
 	has_coa_on_barony_only = no
 	graphical_culture = muslimgfx
 	crusade_cb = crusade
-	playable = no
 	
-	# Names given only to Muslim characters (base names)
-	male_names = {
-		Sten 
-	}
 	
 	vashoth = { #dummy test religion
 		graphical_culture = muslimgfx
