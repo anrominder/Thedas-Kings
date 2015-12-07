@@ -1,0 +1,24 @@
+##########################################################################
+# Colony Modifiers
+##########################################################################
+
+da_road_colony = {
+	levy_size = -2
+	levy_reinforce_rate = -1
+	tax_income = -10
+	icon = 19
+}
+
+da_thaig_colony = {
+	levy_size = -2
+	levy_reinforce_rate = -1
+	tax_income = -15
+	icon = 19
+}
+
+da_great_thaig_colony = {
+	levy_size = -2
+	levy_reinforce_rate = -1
+	tax_income = -20
+	icon = 19
+}

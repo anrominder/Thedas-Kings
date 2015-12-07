@@ -2361,7 +2361,6 @@ e_dwarf_empire = {
 		color2={ 255 255 255 }
 		
 		capital = 877 # c_gumdar
-		culture = darkspawn
 		title = "King"
 		title_female = "Queen"
 		title_prefix = "Kingdom of"
@@ -2883,7 +2882,7 @@ e_dwarf_empire = {
 		color2={ 255 255 255 }
 		
 		capital = 917 # c_hormak
-		culture = darkspawn
+		culture = ruin
 		title = "King"
 		title_female = "Queen"
 		title_prefix = "Kingdom of"

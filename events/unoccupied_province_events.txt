@@ -1,0 +1,3919 @@
+#Unoccupied Province Events
+namespace = unoccupied
+character_event = {
+	id = unoccupied.99
+	
+	is_triggered_only = yes 
+	only_rulers = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_global_flag = scenario_initialised }
+		has_landed_title = c_orzammar	
+	}
+	
+	immediate = { 
+		set_global_flag = scenario_initialised 
+	}
+	
+	option = {}
+}
+
+
+#Initialise Unoccupied province
+character_event = {
+	id = unoccupied.1
+	desc = "EVTDESCunoccupied.1"
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { had_global_flag = { flag = scenario_initialised  days = 5 } }
+		has_landed_title = c_orzammar
+	}
+	option = {
+		name = "Initialise"
+		###Neromenian outpost
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_neromenian_outpost = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Minrathous embassy
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_minrathous_embassy = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Quarinus outpost
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_quarinus_outpost = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Darmallon
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_darmallon = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Sharokovar
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_sharokovar = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Hormak
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_hormak = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Kul baras
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_kul_baras = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Angarrak
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_angarrak = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Gumdar
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_gumdar = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Varen
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_varen = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Valammar
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_valammar = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Kalbarosh
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_kalbarosh = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Gwaren 2
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_gwaren_2 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Kalhirol
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_kalhirol = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Caridins Cross
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_caridins_cross = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Bowammar
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_bowammar = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Priveal thaig
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_priveal_thaig = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Orthan thaig
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_orthan_thaig = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Heidrun thaig
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_heidrun_thaig = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Cadash thaig
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_cadash_thaig = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Valdesine thaig
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_valdesine_thaig = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Valdasine thaig
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_valdasine_thaig = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Abandoned thaig 35
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_35 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###Abandoned thaig 34
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_34 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 33
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_33 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 32
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_32 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 31
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_31 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 30
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_30 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 29
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_29 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 28
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_28 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 27
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_27 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 26
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_26 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 25
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_25 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 24
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_24 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 23
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_23 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 22
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_22 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 21
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_21 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 20
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_20 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 19
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_19 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 18
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_18 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 17
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_17 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 16
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_16 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 15
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_15 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 14
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_14 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 13
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_13 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 12
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_12 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 11
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_11 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 10
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_10 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 9
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_9 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 8
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_8 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 7
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_7 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 7
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_7 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 6
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_6 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 5
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_5 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 4
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_4 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 3
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_3 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 2
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_2 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Abandoned thaig 1
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_abandoned_thaig_1 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###Aeduncan Thaig
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_aeduncan_thaig = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_thaig_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###deep road 93
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_93 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###deep road 92
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_92 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 91
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_91 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 90
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_90 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 89
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_89 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 88
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_88 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 87
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_87 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 86
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_86 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 85
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_85 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 84
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_84 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 83
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_83 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 82
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_82 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 81
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_81 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 80
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_80 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 79
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_79 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 78
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_78 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 77
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_77 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 76
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_76 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 75
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_75 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 74
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_74 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 73
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_73 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 72
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_72 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 71
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_71 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 70
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_70 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 69
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_69 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 68
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_68 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 67
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_67 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 66
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_66 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 65
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_65 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 64
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_64 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 63
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_63 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 62
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_62 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 61
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_61 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 60
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_60 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 59
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_59 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 58
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_58 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 57
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_57 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 56
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_56 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 55
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_55 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 55_2
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_55_2 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 54
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_54 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 53
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_53 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 52
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_52 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 51
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_51 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 50
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_50 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 49
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_49 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 48
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_48 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 47
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_47 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 46
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_46 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 45
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_45 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 44
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_44 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 43
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_43 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 42
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_42 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 41
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_41 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 40
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_40 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###deep road 39
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_39 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###deep road 38
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_38 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###deep road 37
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_37 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 36
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_36 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 35
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_35 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 34
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_34 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 33
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_33 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		###deep road 32
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_32 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 31
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_31 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 30
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_30 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 29
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_29 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 28
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_28 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 27
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_27 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 26
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_26 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 25
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_25 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 24
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_24 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 23
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_23 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 22
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_22 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 21
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_21 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 20
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_20 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 19
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_19 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 18
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_18 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 17
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_17 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 16
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_16 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 15
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_15 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 14
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_14 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 13
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_13 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 12
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_12 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 11
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_11 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 10
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_10 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 9
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_9 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 8
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_8 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 7
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_7 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 6
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_6 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 5
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_5 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 4
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_4 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 3
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_3 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 2
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_2 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		###deep road 1
+		create_character = {
+			name = ""
+			religion = "ruins"
+			culture = "ruin"
+			dynasty = none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		
+		new_character = {
+			c_deep_road_1 = {
+				holder_scope = { any_courtier = { limit = { is_ruler = no } death = yes } }
+				gain_title = PREV 
+				location = { set_province_flag = da_road_ruin }
+			}
+			#character_event = { id = unoccupied.101 }
+		}
+		
+		c_orzammar = {
+			location = { set_province_flag = da_great_thaig }
+		}
+		c_kal_sharok = {
+			location = { set_province_flag = da_great_thaig }
+		}
+		d_revann_thaig = {
+			destroy_landed_title = THIS
+		}
+	}
+}
+#Cull ruin courtiers
+character_event = {
+	id = unoccupied.2
+	desc = "EVTDESCunoccupied.2"
+	
+	trigger = {
+		culture_group = unsettled
+		is_ruler = no	
+	}
+
+	option = {
+		name = "EVTOPTAunoccupied.2" #Yes
+		location = {
+			ROOT = {
+				if = {
+					limit = { is_female = no }
+					liege = {
+						create_character = {
+							random_traits = yes
+							dynasty = none
+							culture = PREVPREV
+							religion = PREVPREV
+							female = no
+							age = 25
+						}
+					}
+				}
+				if = {
+					limit = { is_female = yes }
+					liege = {
+						create_character = {
+							random_traits = yes
+							dynasty = none
+							culture = PREVPREV
+							religion = PREVPREV
+							female = yes
+							age = 19
+						}
+					}
+				}
+			}
+		}	
+		clear_wealth = ROOT
+		wealth = -500
+		death = yes
+	}
+}
+#Establish colony in ruin (from colonisation CB)
+province_event = {
+	id = unoccupied.3
+	desc = "EVTDESCunoccupied.3"
+	picture = "GFX_evt_castle_construction"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_holding = {
+			add_building = ca_colony_1
+			remove_holding_modifier = recently_conquered
+			remove_holding_modifier = new_administration
+		}
+		if = {
+			limit = {
+				has_province_flag = da_road_ruin
+			}
+			clr_province_flag = da_road_ruin
+			add_province_modifier = {name = da_road_colony duration = -1 }
+			set_province_flag = da_road_colony
+		}
+		
+		if = {
+			limit = {
+				has_province_flag = da_thaig_ruin
+			}
+			clr_province_flag = da_thaig_ruin
+			add_province_modifier = {name = da_thaig_colony duration = -1 }
+			set_province_flag = da_thaig_colony
+		}
+		
+		if = {
+			limit = {
+				has_province_flag = da_great_thaig_ruin
+			}
+			clr_province_flag = da_great_thaig_ruin
+			add_province_modifier = {name = da_great_thaig_colony duration = -1 }
+			set_province_flag = da_great_thaig_colony
+		}
+	}
+	
+	option = {
+		
+	}
+}
+#Convert colony to settlement
+province_event = {
+	id = unoccupied.4
+	desc = "EVTDESCunoccupied.3"
+	picture = "GFX_evt_castle_construction"
+	
+	trigger = {
+		or = {
+			and = {
+				has_province_modifier = da_road_colony
+				capital_holding = { has_building = ca_colony_5 }
+			}
+			and = {
+				has_province_modifier = da_thaig_colony
+				capital_holding = { has_building = ca_colony_7 }
+			}
+			and = {
+				has_province_modifier = da_great_thaig_colony
+				capital_holding = { has_building = ca_colony_10 }
+			}
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = EVTOP
+		if = {
+			limit = { has_province_modifier = da_road_colony }
+			remove_province_modifier = da_road_colony
+			clr_province_flag = da_road_colony
+			set_province_flag = da_road
+			capital_holding = {
+				remove_building = ca_colony_1
+				remove_building = ca_colony_2
+				remove_building = ca_colony_3
+				remove_building = ca_colony_4
+				remove_building = ca_colony_5
+			}
+		}
+		if = {
+			limit = { has_province_modifier = da_thaig_colony }
+			remove_province_modifier = da_thaig_colony
+			clr_province_flag = da_thaig_colony
+			set_province_flag = da_thaig
+			capital_holding = {
+				remove_building = ca_colony_1
+				remove_building = ca_colony_2
+				remove_building = ca_colony_3
+				remove_building = ca_colony_4
+				remove_building = ca_colony_5
+				remove_building = ca_colony_6
+				remove_building = ca_colony_7
+			}
+		}
+		if = {
+			limit = { has_province_modifier = da_great_thaig_colony }
+			remove_province_modifier = da_great_thaig_colony
+			clr_province_flag = da_great_thaig_colony
+			set_province_flag = da_great_thaig
+			capital_holding = {
+				remove_building = ca_colony_1
+				remove_building = ca_colony_2
+				remove_building = ca_colony_3
+				remove_building = ca_colony_4
+				remove_building = ca_colony_5
+				remove_building = ca_colony_6
+				remove_building = ca_colony_7
+				remove_building = ca_colony_8
+				remove_building = ca_colony_9
+				remove_building = ca_colony_10
+			}
+		}
+	}
+}

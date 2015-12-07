@@ -15,7 +15,7 @@ b_abandoned_thaig_30 = castle
 #b_abandoned_thaig_30_7 = castle
 
 # Misc
-culture = darkspawn
-religion = darkspawn_old_gods
+culture = ruin
+religion = ruins
 
 #History

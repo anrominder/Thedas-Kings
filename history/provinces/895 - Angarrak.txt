@@ -15,7 +15,7 @@ b_angarrak = castle
 #b_angarrak_7 = castle
 
 # Misc
-culture = darkspawn
-religion = darkspawn_old_gods
+culture = ruin
+religion = ruins
 
 #History

@@ -15,7 +15,7 @@ b_gumdar = castle
 #b_gumdar_7 = castle
 
 # Misc
-culture = darkspawn
-religion = darkspawn_old_gods
+culture = ruin
+religion = ruins
 
 #History

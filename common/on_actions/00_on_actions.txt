@@ -1,5 +1,8 @@
-#character
+character
 on_startup = {
+	events = {
+			
+		}
 }
 
 #character

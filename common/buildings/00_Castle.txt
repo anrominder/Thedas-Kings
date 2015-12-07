@@ -648,8 +648,9 @@ castle = {
 		
 		extra_tech_building_start = 0.3
 	}
-
+####################
 #Darkspawn buildings
+####################
 	#gives units to the darkspawn
 	ca_darkspawn_horde_1 = {
 		decs = ca_darkspawn_horde_decs
@@ -887,14 +888,27 @@ castle = {
 		extra_tech_building_start = 1 # Never get at start of game
 	}
 	
-	
+################
 #Dwarf buildings
-	ca_warrior_caste_1 = {
-		desc = ca_warrior_caste_desc
+################
+	ca_dwarf_warrior_caste_1 = {
+		desc = ca_dwarf_warrior_caste_desc
 		potential = {
 			FROM = { culture = orzammar }
+			not = { 
+				or = {
+					has_province_flag = da_road_colony
+					has_province_flag = da_thaig_colony
+					has_province_flag = da_great_thaig_colony
+				}
+			}
+			or = {
+					has_province_flag = da_road
+					has_province_flag = da_thaig
+					has_province_flag = da_great_thaig
+			}
 		}
-		prerequisites = { ca_thaig_wall_1 }
+		prerequisites = { ca_dwarf_thaig_wall_1 }
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 100
 		build_time = 365
@@ -904,11 +918,11 @@ castle = {
 		
 		extra_tech_building_start = 1.0
 	}
-	ca_warrior_caste_2 = {
-		desc = ca_warrior_caste_desc
+	ca_dwarf_warrior_caste_2 = {
+		desc = ca_dwarf_warrior_caste_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_thaig_wall_2 }
-		upgrades_from = ca_warrior_caste_1
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		upgrades_from = ca_dwarf_warrior_caste_1
 		gold_cost = 120
 		build_time = 547
 		heavy_infantry = 40
@@ -917,11 +931,11 @@ castle = {
 		
 		extra_tech_building_start = 1.8
 	}
-	ca_warrior_caste_3 = {
-		desc = ca_warrior_caste_desc
+	ca_dwarf_warrior_caste_3 = {
+		desc = ca_dwarf_warrior_caste_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_thaig_wall_3 }
-		upgrades_from = ca_warrior_caste_2
+		prerequisites = { ca_dwarf_thaig_wall_3 }
+		upgrades_from = ca_dwarf_warrior_caste_2
 		gold_cost = 200
 		build_time = 730
 		heavy_infantry = 45
@@ -930,11 +944,17 @@ castle = {
 
 		extra_tech_building_start = 3.0
 	}
-	ca_warrior_caste_4 = {
-		desc = ca_warrior_caste_desc
+	ca_dwarf_warrior_caste_4 = {
+		desc = ca_dwarf_warrior_caste_desc
+		potential = {
+			or = {
+				has_province_flag = da_thaig
+				has_province_flag = da_great_thaig
+			}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_thaig_wall_4 }
-		upgrades_from = ca_warrior_caste_3
+		prerequisites = { ca_dwarf_thaig_wall_4 }
+		upgrades_from = ca_dwarf_warrior_caste_3
 		gold_cost = 300
 		build_time = 1095
 		heavy_infantry = 50
@@ -943,11 +963,11 @@ castle = {
 
 		extra_tech_building_start = 3.0
 	}
-	ca_warrior_caste_5 = {
-		desc = ca_warrior_caste_desc
+	ca_dwarf_warrior_caste_5 = {
+		desc = ca_dwarf_warrior_caste_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_thaig_wall_5 }
-		upgrades_from = ca_warrior_caste_4
+		prerequisites = { ca_dwarf_thaig_wall_5 }
+		upgrades_from = ca_dwarf_warrior_caste_4
 		gold_cost = 400
 		build_time = 2190
 		heavy_infantry = 60
@@ -956,11 +976,67 @@ castle = {
 
 		extra_tech_building_start = 2.0
 	}
+	ca_dwarf_warrior_caste_6 = {
+		desc = ca_dwarf_warrior_caste_desc
+		potential = {
+			or = {
+				has_province_flag = da_great_thaig
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_dwarf_thaig_wall_6 }
+		upgrades_from = ca_dwarf_warrior_caste_5
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 50
+		pikemen = 25
+		ai_creation_factor = 102
 
-	ca_thaig_wall_1 = {
-		desc = ca_thaig_wall_desc
+		extra_tech_building_start = 3.0
+	}
+	ca_dwarf_warrior_caste_7 = {
+		desc = ca_dwarf_warrior_caste_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_dwarf_thaig_wall_7 }
+		upgrades_from = ca_dwarf_warrior_caste_6
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 50
+		pikemen = 25
+		ai_creation_factor = 102
+
+		extra_tech_building_start = 3.0
+	}
+	ca_dwarf_warrior_caste_8 = {
+		desc = ca_dwarf_warrior_caste_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_dwarf_thaig_wall_8 }
+		upgrades_from = ca_dwarf_warrior_caste_7
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 50
+		pikemen = 25
+		ai_creation_factor = 102
+
+		extra_tech_building_start = 3.0
+	}
+
+	ca_dwarf_thaig_wall_1 = {
+		desc = ca_dwarf_thaig_wall_desc
 		potential = {
 			FROM = { culture = orzammar }
+			not = { 
+				or = {
+					has_province_flag = da_road_colony
+					has_province_flag = da_thaig_colony
+					has_province_flag = da_great_thaig_colony
+				}
+			}
+			or = {
+					has_province_flag = da_road
+					has_province_flag = da_thaig
+					has_province_flag = da_great_thaig
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 50
@@ -972,10 +1048,10 @@ castle = {
 		
 		extra_tech_building_start = 1.0
 	}
-	ca_thaig_wall_2 = {
-		desc = ca_thaig_wall_desc
+	ca_dwarf_thaig_wall_2 = {
+		desc = ca_dwarf_thaig_wall_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		upgrades_from = ca_thaig_wall_1
+		upgrades_from = ca_dwarf_thaig_wall_1
 		gold_cost = 50
 		build_time = 182
 		fort_level = 0.5
@@ -985,10 +1061,10 @@ castle = {
 
 		extra_tech_building_start = 0.6
 	}
-	ca_thaig_wall_3 = {
-		desc = ca_thaig_wall_desc
+	ca_dwarf_thaig_wall_3 = {
+		desc = ca_dwarf_thaig_wall_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		upgrades_from = ca_thaig_wall_2
+		upgrades_from = ca_dwarf_thaig_wall_2
 		gold_cost = 50
 		build_time = 182
 		fort_level = 1.0
@@ -998,10 +1074,16 @@ castle = {
 		
 		extra_tech_building_start = 0.2
 	}
-	ca_thaig_wall_4 = {
-		desc = ca_thaig_wall_desc
+	ca_dwarf_thaig_wall_4 = {
+		desc = ca_dwarf_thaig_wall_desc
+		potential = {
+			or = {
+				has_province_flag = da_thaig
+				has_province_flag = da_great_thaig
+			}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		upgrades_from = ca_thaig_wall_3
+		upgrades_from = ca_dwarf_thaig_wall_3
 		gold_cost = 100
 		build_time = 365
 		fort_level = 1.0
@@ -1011,10 +1093,10 @@ castle = {
 		
 		extra_tech_building_start = 0.2
 	}
-	ca_thaig_wall_5 = {
-		desc = ca_thaig_wall_desc
+	ca_dwarf_thaig_wall_5 = {
+		desc = ca_dwarf_thaig_wall_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		upgrades_from = ca_thaig_wall_4
+		upgrades_from = ca_dwarf_thaig_wall_4
 		gold_cost = 100
 		build_time = 365
 		fort_level = 1.5
@@ -1024,5 +1106,508 @@ castle = {
 		ai_creation_factor = 76
 
 		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_thaig_wall_6 = {
+		desc = ca_dwarf_thaig_wall_desc
+		potential = {
+			has_province_flag = da_great_thaig
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_thaig_wall_5
+		gold_cost = 100
+		build_time = 365
+		fort_level = 1.0
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 77
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_thaig_wall_7 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_thaig_wall_6
+		gold_cost = 100
+		build_time = 365
+		fort_level = 1.0
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 77
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_thaig_wall_8 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_thaig_wall_7
+		gold_cost = 100
+		build_time = 365
+		fort_level = 1.0
+		levy_size = 0.05
+		tax_income = 0.2
+		ai_creation_factor = 77
+		
+		extra_tech_building_start = 0.2
+	}
+	
+	ca_dwarf_mine_1 = {
+		desc = ca_dwarf_mine_desc
+		potential = {
+			FROM = { culture = orzammar }
+			not = { 
+				or = {
+					has_province_flag = da_road_colony
+					has_province_flag = da_thaig_colony
+					has_province_flag = da_great_thaig_colony
+				}
+			}
+			or = {
+					has_province_flag = da_road
+					has_province_flag = da_thaig
+					has_province_flag = da_great_thaig
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 50
+		build_time = 182
+		tax_income = 1.0
+		ai_creation_factor = 80
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_mine_2 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_dwarf_thaig_wall_1 }
+		upgrades_from = ca_dwarf_mine_1
+		gold_cost = 50
+		build_time = 182
+		tax_income = 1.0
+		ai_creation_factor = 78
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_mine_3 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		upgrades_from = ca_dwarf_mine_2
+		gold_cost = 50
+		build_time = 182
+		tax_income = 1.0
+		ai_creation_factor = 78
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_mine_4 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_mine_3
+		gold_cost = 50
+		build_time = 182
+		tax_income = 1.0
+		ai_creation_factor = 78
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_mine_5 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_dwarf_thaig_wall_3 }
+		upgrades_from = ca_dwarf_mine_4
+		gold_cost = 50
+		build_time = 182
+		tax_income = 1.0
+		ai_creation_factor = 78
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_mine_6 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		potential = {
+			or = {
+				has_province_flag = da_thaig
+				has_province_flag = da_great_thaig
+			}
+		}
+		prerequisites = { ca_dwarf_thaig_wall_5 }
+		upgrades_from = ca_dwarf_mine_5
+		gold_cost = 50
+		build_time = 182
+		tax_income = 1.0
+		ai_creation_factor = 78
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_mine_7 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_dwarf_thaig_wall_6 }
+		upgrades_from = ca_dwarf_mine_6
+		gold_cost = 50
+		build_time = 182
+		tax_income = 1.0
+		ai_creation_factor = 78
+		
+		extra_tech_building_start = 0.2
+	}
+	ca_dwarf_mine_8 = {
+		desc = ca_dwarf_thaig_wall_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_dwarf_thaig_wall_7 }
+		upgrades_from = ca_dwarf_mine_7
+		gold_cost = 50
+		build_time = 182
+		tax_income = 1.0
+		ai_creation_factor = 78
+		
+		extra_tech_building_start = 0.2
+	}
+	
+	ca_dwarf_blacksmith_1 ={
+		desc = ca_dwarf_blacksmith_desc
+		potential = {
+			FROM = { culture = orzammar }
+			not = { 
+				or = {
+					has_province_flag = da_road_colony
+					has_province_flag = da_thaig_colony
+					has_province_flag = da_great_thaig_colony
+				}
+			}
+			or = {
+					has_province_flag = da_road
+					has_province_flag = da_thaig
+					has_province_flag = da_great_thaig
+			}
+		}
+		prerequisites = { ca_dwarf_thaig_wall_1 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		heavy_infantry_offensive = 0.05
+		heavy_infantry_defensive = 0.05
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_blacksmith_2 ={
+		desc = ca_dwarf_blacksmith_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_blacksmith_1
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_blacksmith_3 ={
+		desc = ca_dwarf_blacksmith_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_blacksmith_2
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_blacksmith_4 ={
+		desc = ca_dwarf_blacksmith_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		potential = {
+			or = {
+				has_province_flag = da_thaig
+				has_province_flag = da_great_thaig
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_blacksmith_3
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_blacksmith_5 ={
+		desc = ca_dwarf_blacksmith_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_blacksmith_4
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_blacksmith_6 ={
+		desc = ca_dwarf_blacksmith_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		potential = {
+			has_province_flag = da_great_thaig
+		}
+		upgrades_from = ca_dwarf_blacksmith_5
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_blacksmith_7 ={
+		desc = ca_dwarf_blacksmith_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_blacksmith_6
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_blacksmith_8 ={
+		desc = ca_dwarf_blacksmith_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_blacksmith_7
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+		
+		extra_tech_building_start = 1.0
+	}
+	
+	ca_dwarf_proving_ground_1 ={
+		desc = ca_dwarf_proving_ground_desc
+		potential = {
+			FROM = { culture = orzammar }
+			not = { 
+				or = {
+					has_province_flag = da_road_colony
+					has_province_flag = da_thaig_colony
+					has_province_flag = da_great_thaig_colony
+				}
+			}
+			or = {
+					has_province_flag = da_thaig
+					has_province_flag = da_great_thaig
+			}
+		}
+		prerequisites = { ca_dwarf_thaig_wall_1 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		land_organisation = 0.1
+		land_morale = 0.1
+		levy_reinforce_rate = 0.05
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_proving_ground_2 = {
+		desc = ca_dwarf_proving_ground_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_proving_ground_1
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		land_organisation = 0.1
+		land_morale = 0.1
+		levy_reinforce_rate = 0.05
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_proving_ground_3 = {
+		desc = ca_dwarf_proving_ground_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_proving_ground_2
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		land_organisation = 0.1
+		land_morale = 0.1
+		levy_reinforce_rate = 0.05
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_proving_ground_4 = {
+		desc = ca_dwarf_proving_ground_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		potential = {
+			or = {
+				has_province_flag = da_great_thaig
+			}
+		}
+		upgrades_from = ca_dwarf_proving_ground_3
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		land_organisation = 0.1
+		land_morale = 0.1
+		levy_reinforce_rate = 0.05
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_dwarf_proving_ground_5 = {
+		desc = ca_dwarf_proving_ground_desc
+		prerequisites = { ca_dwarf_thaig_wall_2 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_dwarf_proving_ground_4
+		gold_cost = 50
+		build_time = 182
+		ai_creation_factor = 80
+		land_organisation = 0.1
+		land_morale = 0.1
+		levy_reinforce_rate = 0.05
+		
+		extra_tech_building_start = 1.0
+	}
+	
+#######
+#Colony
+#######
+	ca_colony_1 = {
+		desc = ca_colony_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		potential = {
+			or = {
+				has_province_flag = da_road_colony
+				has_province_flag = da_thaig_colony
+				has_province_flag = da_great_thaig_colony
+			}
+		}
+		gold_cost = 1000
+		build_time = 1
+		fort_level = 1
+		tax_income = 1
+		ai_creation_factor = 100
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_2 = {
+		desc = ca_colony_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_1
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_3 = {
+		desc = ca_colony_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_2
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_4 = {
+		desc = ca_colony_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_3
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_5 = {
+		desc = ca_colony_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_4
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_6 = {
+		desc = ca_colony_desc
+		potential = {
+			or = {
+				has_province_flag = da_thaig_colony
+				has_province_flag = da_great_thaig_colony
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_5
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_7 = {
+		desc = ca_colony_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_6
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_8 = {
+		desc = ca_colony_desc
+		potential = {
+			has_province_flag = da_great_thaig_colony
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_7
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_9 = {
+		desc = ca_colony_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_8
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_colony_10 = {
+		desc = ca_colony_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = ca_colony_9
+		gold_cost = 1500
+		build_time = 1
+		tax_income = 2
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.0
 	}
 }

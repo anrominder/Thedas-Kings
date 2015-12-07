@@ -34,6 +34,13 @@ spriteTypes = {
                 norefcount = yes
                 effectFile = "gfx/FX/buttonstate.lua"
         }
+		spriteType = {
+                name = "GFX_trait_ruin"
+                texturefile = "gfx/traits/dwarf_race.tga"
+                noOfFrames = 1
+                norefcount = yes
+                effectFile = "gfx/FX/buttonstate.lua"
+        }
         spriteType = {
                 name = "GFX_trait_mage"
                 texturefile = "gfx/traits/mage.tga"
@@ -41,14 +48,14 @@ spriteTypes = {
                 norefcount = yes
                 effectFile = "gfx/FX/buttonstate.lua"
         }
-		        spriteType = {
+		spriteType = {
                 name = "GFX_trait_halfdwarf_race"
                 texturefile = "gfx/traits/halfdwarf_race.dds"
                 noOfFrames = 1
                 norefcount = yes
                 effectFile = "gfx/FX/buttonstate.lua"
         }
-		        spriteType = {
+		spriteType = {
                 name = "GFX_trait_elf_blooded"
                 texturefile = "gfx/traits/elf_blooded.dds"
                 noOfFrames = 1

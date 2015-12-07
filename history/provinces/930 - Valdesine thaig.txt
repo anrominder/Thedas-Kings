@@ -15,7 +15,7 @@ b_valdesine_thaig = castle
 #b_valdesine_thaig_7 = castle
 
 # Misc
-culture = darkspawn
-religion = darkspawn_old_gods
+culture = ruin
+religion = ruins
 
 #History

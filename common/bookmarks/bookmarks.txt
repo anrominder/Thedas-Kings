@@ -3,6 +3,10 @@ bookmark =
 	name = "BM_FIFTHBLIGHT"
 	desc = "BM_FIFTHBLIGHT_DESC"
 	date = 8929.1.1
+	
+	immediate = { 
+		set_global_flag = scenario_initialised 
+	}
 
 	character = 1002005 #Cailan
     character = 1006001 #Celene
