@@ -1,13 +1,26 @@
-1010001 = { #Anderfels king
-name ="Wilhelm"
-dynasty=1010
-religion = "andrastian_chantry" 
-culture = "anders" 
-
-8895.1.1 ={
-        birth = yes 
-        }
+1010001 ={ #Anderfels King
+	name = "Wilhelm"
+	dynasty = 1010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	#Added Depth
+	add_trait = "brilliant_strategist"
+	add_trait = "greedy"
+	add_trait = "honest"
+	add_trait = "proud"
+	add_trait = "wroth"
+	
+	8884.1.1={
+		birth = yes #Changed birth, Unless someone has the book and can prove his father died from anything besides natural causes I am gonna assume he died of old age.
+	}
+	
+	8956.1.1={
+		death = yes #Custom Death - habit
+	}
 }
+
 1008001 = { #Antivan king
 name ="Claudio"
 dynasty=1008
