@@ -2871,7 +2871,7 @@
 	add_trait = "envious"
 	add_trait = "gregarious"
 	
-	8885.1.1={
+	8884.1.1={
 		birth = yes
 	}
 	
@@ -2897,7 +2897,7 @@
 	add_trait = "proud"
 	add_trait = "bastard"
 	
-	8909.1.1={
+	8908.1.1={
 		birth = yes
 	}
 	
@@ -2910,6 +2910,7 @@
 	name = "Jailyn"
 	dynasty = 75006
 	female = yes
+	
 	religion = "andrastian_chantry"
 	culture = "orlesian"
 	
@@ -2920,7 +2921,7 @@
 	add_trait = "just"
 	add_trait = "gregarious"
 	
-	8889.1.1={
+	8888.1.1={
 		birth = yes
 	}
 	
@@ -2983,25 +2984,94 @@
 77006001={
 	name = "Marie"
 	dynasty = 77006
+	female = yes
 	
 	religion = "andrastian_chantry"
 	culture = "orlesian"
 	
-	add_trait = tough_soldier
-	add_trait = quick
-	add_trait = kind
-	add_trait = cynical
-	add_trait = just
-	add_trait = trusting
+	add_trait = "tough_soldier"
+	add_trait = "quick"
+	add_trait = "kind"
+	add_trait = "cynical"
+	add_trait = "just"
+	add_trait = "trusting"
 	
-	8904.1.1={
+	8910.1.1={
 		birth = yes
 	}
 	
-	8969.1.1={
+	8979.1.1={
 		death = yes
 	}
 }
 
+##House Morroe
+78006001={
+	name = "Albert"
+	dynasty = 78006
+	
+	religion = "andrastian_chantry"
+	culture = "orlesian"
+	
+	add_trait = "flamboyant_schemer"
+	add_trait = "fair"
+	add_trait = "lustful"
+	add_trait = "gregarious"
+	add_trait = "ambitious"
+	
+	8906.1.1={
+		birth = yes
+	}
+	
+	8979.1.1={
+		death = yes
+	}
+}
 
+##House Harkin
+#family friend of House Morroe
+79006001={
+	name = "Novak"
+	dynasty = 79006
+	
+	religion = "kal_sharok_ancestors"
+	culture = "dwarven"
+	
+	add_trait = "fortune_builder"
+	add_trait = "strong"
+	add_trait = "shy"
+	add_trait = "diligent"
+	add_trait = "scholar"
+	add_trait = "dwarf_race"
+	
+	8909.1.1={
+		birth = yes
+	}
+	
+	8982.1.1={
+		death = yes
+	}
+}
 
+##house de Esarey
+80006001={
+	name = "Xavier"
+	dynasty = 80006
+	
+	religion = "andrastian_chantry"
+	culture = "orlesian"
+	
+	add_trait = "skilled_tactician"
+	add_trait = "strong"
+	add_trait = "defensive_leader"
+	add_trait = "kind"
+	add_trait = "brave"
+	
+	8911.1.1={
+		birth = yes
+	}
+	
+	8981.1.1={
+		death = yes
+	}
+}

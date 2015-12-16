@@ -505,5 +505,614 @@
 	}
 	
 	8985.1.1={
-		death = yes}
+		death = yes
+	}
+}
+
+##House Boettcher
+10010001={
+	name = "Lucas"
+	dynasty = 10010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "tough_soldier"
+	add_trait = "quick"
+	add_trait = "cruel"
+	add_trait = "arbitrary"
+	add_trait = "crusader"
+	
+	8881.1.1={
+		birth = yes
+	}
+	
+	8902.1.1={
+		add_spouse = 10010002
+	}
+	
+	8953.1.1={
+		death = yes
+	}
+}
+
+10010002={
+	name = "Felizia"
+	dynasty = 10010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "naive_appeaser"
+	add_trait = "fair"
+	add_trait = "kind"
+	add_trait = "quick"
+	add_trait = "crusader"
+	
+	8883.1.1={
+		birth = yes
+	}
+	
+	8952.1.1={
+		death = yes
+	}
+}
+
+10010003={
+	name = "Adolar"
+	dynasty = 10010
+	father = 10010001
+	mother = 10010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "brilliant_strategist"
+	add_trait = "hedonist"
+	add_trait = "lustful"
+	add_trait = "wroth"
+	add_trait = "cruel"
+	
+	8905.1.1={
+		birth = yes
+	}
+	
+	8972.1.1={
+		death = yes
+	}
+}
+
+10010004={
+	name = "Finja"
+	dynasty = 10010
+	female = yes
+	father = 10010001
+	mother = 10010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "charismatic_negotiator"
+	add_trait = "quick"
+	add_trait = "cruel"
+	add_trait = "fair"
+	add_trait = "crusader"
+	
+	8909.1.1={
+		birth = yes
+	}
+	
+	8987.1.1={
+		death = yes
+	}
+}
+
+10010005={
+	name = "Thirza"
+	dynasty = 10010
+	female = yes
+	father = 10010001
+	mother = 10010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "elusive_shadow"
+	add_trait = "kind"
+	add_trait = "deceitful"
+	add_trait = "wroth"
+	add_trait = "arbitrary"
+	
+	8912.1.1={
+		birth = yes
+	}
+	
+	8988.1.1={
+		death = yes
+	}
+}
+
+##House Bohlinger
+11010001={
+	name = "Torben"
+	dynasty = 11010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "thrifty_clerk"
+	add_trait = "humble"
+	add_trait = "charitable"
+	add_trait = "patient"
+	add_trait = "paranoid"
+	
+	8984.1.1={
+		birth = yes
+	}
+	
+	8948.1.1={
+		death = yes
+	}
+}
+
+##House Borkenhagen
+12010001={
+	name = "Fritz"
+	dynasty = 12010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "naive_appeaser"
+	add_trait = "slow"
+	add_trait = "trusting"
+	add_trait = "honest"
+	add_trait = "humble"
+	
+	8880.1.1={
+		birth = yes
+	}
+	
+	8947.1.1={
+		death = yes
+	}
+}
+
+12010002={
+	name = "Ivonne"
+	dynasty = 12010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "fortune_builder"
+	add_trait = "ambitious"
+	add_trait = "paranoid"
+	add_trait = "deceitful"
+	add_trait = "humble"
+	
+	8898.1.1={
+		birth = yes
+	}
+	
+	8970.1.1={
+		death = yes
+	}
+}
+
+##House Claassen
+13010001={
+	name = "Albuin"
+	dynasty = 13010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "indulgent_wastrel"
+	add_trait = "stutter"
+	add_trait = "drunkard"
+	add_trait = "envious"
+	add_trait = "craven"
+	
+	8896.1.1={
+		birth = yes
+	}
+	
+	8918.1.1={
+		add_spouse = 13010002
+	}
+	
+	8969.1.1={
+		death = yes
+	}
+}
+
+13010002={
+	name = "Lara"
+	dynasty = 13010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "thrifty_clerk"
+	add_trait = "shy"
+	add_trait = "zealous"
+	add_trait = "diligent"
+	add_trait = "greedy"
+	
+	8899.1.1={
+		birth = yes
+	}
+	
+	8972.1.1={
+		death = yes
+	}
+}
+
+13010003={
+	name = "Lina"
+	dynasty = 13010
+	female = yes
+	father = 13010001
+	mother = 13010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	add_trait = "midas_touched"
+	add_trait = "gregarious"
+	add_trait = "content"
+	add_trait = "charitable"
+	add_trait = "kind"
+	
+	8920.1.1={
+		birth = yes
+	}
+	
+	8993.1.1={
+		death = yes
+	}
+}
+
+#Falling Behind will add traits later
+##House Cornatzer
+14010001={
+	name = "Wolfram"
+	dynasty = 14010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8906.1.1={
+		birth = yes
+	}
+	
+	8928.1.1={
+		add_spouse = 14010002
+	}
+	
+	8986.1.1={
+		death = yes
+	}
+}
+
+14010002={
+	name = "Anni"
+	dynasty = 14010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8910.1.1={
+		birth = yes
+	}
+	
+	8984.1.1={
+		death = yes
+	}
+}
+
+14010003={
+	name = "Anika"
+	dynasty = 14010
+	father = 14010001
+	mother = 14010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8929.1.1={
+		birth = yes
+	}
+	
+	9001.1.1={
+		death = yes
+	}
+}
+
+14010004={
+	name = "Bastian"
+	dynasty = 14010
+	father = 14010001
+	mother = 14010002
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8877.1.1={
+		birth = yes
+	}
+	
+	8955.1.1={
+		death = yes
+	}
+}
+
+##House Crownover
+15010001={
+	name = "Tilmann"
+	dynasty = 15010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8891.1.1={
+		birth = yes
+	}
+	
+	8913.1.1={
+		add_spouse = 15010002
+	}
+	
+	8964.1.1={
+		death = yes
+	}
+}
+
+15010002={
+	name = "Mareike"
+	dynasty = 15010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8894.1.1={
+		birth = yes
+	}
+	
+	8976.1.1={
+		death = yes
+	}
+}
+
+##House Cronister
+16010001={
+	name = "Bernadette"
+	dynasty = 16010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8881.1.1={
+		birth = yes
+	}
+	
+	8959.1.1={
+		death = yes
+	}
+}
+
+16010002={
+	name = "Anton"
+	dynasty = 16010
+	mother = 16010001
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8900.1.1={
+		birth = yes
+	}
+	
+	8978.1.1={
+		death = yes
+	}
+}
+
+16010003={
+	name = "Reiner"
+	dynasty = 16010
+	mother = 16010001
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8905.1.1={
+		birth = yes
+	}
+	
+	8976.1.1={
+		death = yes
+	}
+}
+
+16010004={
+	name = "Frida"
+	dynasty = 16010
+	female = yes
+	mother = 16010001
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8915.1.1={
+		birth = yes
+	}
+	
+	8994.1.1={
+		death = yes
+	}
+}
+
+##House Damitz
+17010001={
+	name = ""
+	dynasty = 17010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	
+}
+
+##House Dankers
+18010001={
+	name = "Christoph"
+	dynasty = 18010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8896.1.1={
+		birth = yes
+	}
+	
+	8925.1.1={
+		add_spouse = 18010002
+	}
+	
+	8963.1.1={
+		death = yes
+	}
+}
+
+18010002={
+	name = "Doris"
+	dynasty = 18010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8904.1.1={
+		birth = yes
+	}
+	
+	8982.1.1={
+		death = yes
+	}
+}
+
+##House Dempewolf
+19010001={
+	name = "Dominic"
+	dynasty = 19010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8878.1.1={
+		birth = yes
+	}
+	
+	8905.1.1={
+		add_spouse = 19010002
+	}
+	
+	8956.1.1={
+		death = yes
+	}
+}
+
+19010002={
+	name = "Silvia"
+	dynasty = 19010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8882.1.1={
+		birth = yes
+	}
+	
+	8958.1.1={
+		death = yes
+	}
+}
+
+19010003={
+	name = "Erhart"
+	dynasty = 19010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8906.1.1={
+		birth = yes
+	}
+	
+	8982.1.1={
+		death = yes
+	}
+}
+
+##House Dieker
+20010001={
+	name = "Heiko"
+	dynasty = 20010
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8902.1.1={
+		birth = yes
+	}
+	
+	8925.1.1={
+		add_spouse = 20010002
+	}
+	
+	8975.1.1={
+		death = yes
+	}
+}
+
+20010002={
+	name = "Inga"
+	dynasty = 20010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8907.1.1={
+		birth = yes
+	}
+	
+	8983.1.1={
+		death = yes
+	}
+}
+
+20010003={
+	name = "Irma"
+	dynasty = 20010
+	female = yes
+	
+	religion = "andrastian_chantry"
+	culture = "anders"
+	
+	8927.1.1={
+		birth = yes
+	}
+	
+	8998.1.1={
+		death = yes
+	}
 }
