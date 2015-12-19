@@ -1,0 +1,52 @@
+namespace = dsraid
+character_event = {	                        
+id = dsraid.1
+only_rulers = yes
+description = dsraid.desc #.
+mean_time_to_happen = {
+months = 10
+}
+trigger = {
+location = {
+OR = {
+region = k_orzammar_region
+region = k_gumdar_region
+region = k_hormak_region
+region = k_kal_sharok_region
+		}
+	}
+}
+option = {
+name = dsraid.name #
+}
+immediate = {
+create_character = {
+random_traits = yes
+age = 60
+religion = darkspawn_old_gods
+culture = darkspawn
+trait = darkspawn_race
+}
+random_realm_province = {
+new_character = {
+create_title = {
+tier = DUKE
+landless = yes
+adventurer = yes
+culture = darkspawn
+name = "DARKSPAWN_LOOTER"
+holder = THIS
+}
+spawn_unit = {
+province = PREV
+owner = THIS
+is_looter = yes 
+can_toggle_looting = no
+match_character = PREVPREVPREV
+match_mult = 0.1
+attrition = 0
+				}
+			}
+		}
+	}
+}
